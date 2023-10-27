@@ -1,0 +1,2573 @@
+/*
+    Home
+*/
+#main {
+    overflow: hidden;
+    padding: 116px 0 0;
+
+    @include pc {
+        padding: get_pc(116) 0 0;
+    }
+
+    @include sp {
+        padding: get_sp(52) 0 0;
+    }
+}
+
+#banner {
+    .thumb {
+        @include sp {
+            width: get_sp(390);
+            height: get_sp(296);
+        }
+    }
+}
+
+.advertisement {
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, #6330D6 0%, #E216C9 44%, #FF009C 100%);
+
+        @include pc {
+            height: get_pc(8);
+        }
+
+        @include sp {
+            height: get_sp(2);
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(90deg, #6330D6 0%, #E216C9 44%, #FF009C 100%);
+
+        @include pc {
+            height: get_pc(8);
+        }
+
+        @include sp {
+            height: get_sp(2);
+        }
+    }
+
+    .inner {
+        max-width: 1196px;
+        margin: 0 auto;
+        padding: 30px 0 22px;
+
+        @include pc {
+            max-width: get_pc(1196);
+            padding: get_pc(30) 0 get_pc(22);
+        }
+
+        @include sp {
+            max-width: 100%;
+            padding: get_sp(7) 0;
+        }
+
+        .tlt_section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            @include pc {
+                margin-bottom: get_pc(15);
+            }
+
+            @include sp {
+                margin-bottom: get_sp(1);
+                padding: 0 get_sp(18);
+            }
+
+            h4 {
+                font-family: $font-zedou;
+                font-size: 48px;
+                color: #2D4B73;
+                margin-right: 8px;
+                font-weight: 900;
+
+                @include pc {
+                    font-size: get_pc(48);
+                    margin-right: get_pc(8);
+                }
+
+                @include sp {
+                    font-size: get_sp(20);
+                    margin-right: get_sp(1);
+                }
+
+                span {
+                    font-size: 17px;
+                    font-weight: bold;
+                    line-height: 25px;
+                    font-family: $base-maru-gothic;
+                    text-align: center;
+                    color: #2D4B73;
+                    display: block;
+
+                    @include pc {
+                        font-size: get_pc(17);
+                        line-height: get_pc(25);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(8);
+                        line-height: get_sp(11);
+                    }
+                }
+            }
+
+
+            .dot {
+                span {
+                    display: block;
+                    position: relative;
+                    font-size: 63px;
+                    line-height: 12px;
+                    letter-spacing: 20px;
+                    top: -21px;
+                    right: 25px;
+                    color: #2D4B73;
+
+                    @include pc {
+                        font-size: get_pc(63);
+                        line-height: get_pc(12);
+                        letter-spacing: get_pc(20);
+                        top: get_pc(-21);
+                        right: get_pc(25);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(25);
+                        line-height: get_sp(5);
+                        letter-spacing: get_sp(8);
+                        top: get_sp(-8);
+                        right: get_sp(4);
+                    }
+                }
+            }
+
+            p {
+                font-size: 34px;
+                line-height: 34px;
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+
+                @include pc {
+                    font-size: get_pc(34);
+                    line-height: get_pc(34);
+                }
+
+                @include sp {
+                    font-size: get_sp(14);
+                    line-height: get_sp(14);
+                }
+            }
+        }
+
+        .content {
+            background: transparent linear-gradient(91deg, #6330D6 0%, #E216C9 44%, #FF009C 100%) 0% 0% no-repeat padding-box;
+            border-radius: 5px;
+            padding: 5px 283px 22px 196px;
+            position: relative;
+            margin-bottom: 26px;
+
+            @include pc {
+                border-radius: get_pc(5);
+                padding: get_pc(5) get_pc(283) get_pc(22) get_pc(196);
+                margin-bottom: get_pc(26);
+            }
+
+            @include sp {
+                border-radius: get_sp(1);
+                padding: get_sp(2) get_sp(55) get_sp(9) get_sp(32);
+                margin-bottom: get_sp(9);
+            }
+
+            .txt_desp {
+                display: flex;
+            }
+
+            .frist {
+                display: flex;
+                align-items: flex-end;
+                margin-right: 46px;
+
+                @include pc {
+                    margin-right: get_pc(46);
+                }
+
+                @include sp {
+                    margin-right: get_sp(19);
+                }
+
+                span {
+                    font-family: $base-font-family;
+                    font-size: 21px;
+                    line-height: 23px;
+                    margin-right: 4px;
+                    color: #FFFFFF;
+                    width: 21px;
+                    font-weight: bold;
+                    top: -16px;
+                    position: relative;
+
+                    @include pc {
+                        font-size: get_pc(21);
+                        line-height: get_pc(23);
+                        margin-right: get_pc(4);
+                        width: get_pc(21);
+                        top: get_pc(-16);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(9);
+                        line-height: get_sp(10);
+                        margin-right: get_sp(1);
+                        width: get_sp(9);
+                        top: get_sp(-6);
+                    }
+                }
+
+                h2 {
+                    font-family: $base-font-family;
+                    font-size: 111px;
+                    letter-spacing: 2.55px;
+                    color: #FAE700;
+                    font-weight: bold;
+
+                    @include pc {
+                        font-size: get_pc(111);
+                        letter-spacing: get_pc(2.55);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(45);
+                        letter-spacing: get_sp(1.03);
+                    }
+
+                }
+
+                .percent {
+                    font-family: $base-font-family;
+                    font-size: 63px;
+                    letter-spacing: 1.45px;
+                    color: #FAE700;
+                    line-height: 63px;
+                    margin-right: 5px;
+                    width: unset;
+                    font-weight: bold;
+
+                    @include pc {
+                        font-size: get_pc(63);
+                        letter-spacing: get_pc(1.45);
+                        line-height: get_pc(63);
+                        margin-right: get_pc(5);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(26);
+                        letter-spacing: get_sp(0.6);
+                        line-height: get_sp(26);
+                        margin-right: get_sp(2);
+                    }
+
+                }
+
+                .conversion {
+                    font-family: $base-font-family;
+                    font-size: 19px;
+                    line-height: 21px;
+                    margin-right: 0;
+                    color: #FFFFFF;
+                    width: unset;
+                    font-weight: bold;
+
+                    @include pc {
+                        font-size: get_pc(19);
+                        line-height: get_pc(21);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(8);
+                        line-height: get_sp(9);
+                    }
+
+                    strong {
+                        display: block;
+                        margin-top: 2px;
+                        font-family: $base-font-family;
+                        font-size: 37px;
+                        line-height: 37px;
+                        margin-right: 0;
+                        color: #FFFFFF;
+                        width: unset;
+                        font-weight: bold;
+                        letter-spacing: 0.85px;
+
+                        @include pc {
+                            margin-top: get_pc(2);
+                            font-size: get_pc(37);
+                            line-height: get_pc(37);
+                            letter-spacing: get_pc(0.85);
+                        }
+
+                        @include sp {
+                            margin-top: 0;
+                            font-size: get_sp(15);
+                            line-height: get_sp(15);
+                            letter-spacing: get_sp(0.34);
+                        }
+                    }
+                }
+            }
+
+            .last {
+                display: flex;
+                align-items: flex-end;
+
+                span {
+                    font-family: $base-font-family;
+                    font-size: 22px;
+                    width: 22px;
+                    color: #FFFFFF;
+                    line-height: 22px;
+                    margin-right: 1px;
+                    font-weight: bold;
+                    top: -16px;
+                    position: relative;
+
+                    @include pc {
+                        width: get_pc(22);
+                        font-size: get_pc(22);
+                        line-height: get_pc(22);
+                        margin-right: get_pc(1);
+                        top: get_pc(-16);
+                    }
+
+                    @include sp {
+                        width: get_sp(9);
+                        font-size: get_sp(10);
+                        line-height: get_sp(10);
+                        margin-right: 0;
+                        top: get_sp(-2);
+                    }
+
+                    strong {
+                        font-size: 29px;
+
+                        @include pc {
+                            font-size: get_pc(29);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(12);
+                            margin-bottom: get_sp(2);
+                        }
+
+                    }
+                }
+
+                h2 {
+                    font-family: $base-font-family;
+                    font-size: 111px;
+                    letter-spacing: 2.55px;
+                    color: #FAE700;
+                    font-weight: bold;
+                    margin-right: 1px;
+
+                    @include pc {
+                        font-size: get_pc(111);
+                        letter-spacing: get_pc(2.55);
+                        margin-right: get_pc(1);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(45);
+                        letter-spacing: get_sp(1.03);
+                        margin-right: 0;
+                    }
+                }
+
+                p {
+                    font-family: $base-font-family;
+                    font-size: 34px;
+                    color: #FFFFFF;
+                    letter-spacing: -1.94px;
+                    font-weight: bold;
+                    top: -16px;
+                    position: relative;
+
+                    @include pc {
+                        font-size: get_pc(34);
+                        letter-spacing: get_pc(-1.94);
+                        top: get_pc(-16);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(14);
+                        letter-spacing: get_sp(-0.8);
+                        top: get_sp(-6);
+                    }
+
+                    span {
+                        color: #FAE700;
+                        font-size: 34px;
+                        letter-spacing: -1.94px;
+                        font-weight: bold;
+                        line-height: 34px;
+                        margin-right: unset;
+                        top: unset;
+
+                        @include pc {
+                            font-size: get_pc(34);
+                            letter-spacing: get_pc(-1.94);
+                            line-height: get_pc(34);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                            letter-spacing: get_sp(-0.8);
+                            line-height: get_sp(14);
+                        }
+                    }
+                }
+            }
+
+            .txt_note {
+                font-family: $base-font-family;
+                font-weight: bold;
+                background: transparent linear-gradient(275deg, #9E24D0 0%, #FE019C 100%) 0% 0% no-repeat padding-box;
+                border: 3px solid #FFFFFF;
+                color: #FFFFFF;
+                font-size: 31px;
+                line-height: 34px;
+                letter-spacing: 0.74px;
+                padding: 8px 21px 14px 12px;
+
+                @include pc {
+                    border: get_pc(3) solid #FFFFFF;
+                    font-size: get_pc(31);
+                    line-height: get_pc(34);
+                    letter-spacing: get_pc(0.74);
+                    padding: get_pc(8) get_pc(21) get_pc(14) get_pc(12);
+                }
+
+                @include sp {
+                    border: get_sp(1) solid #FFFFFF;
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                    letter-spacing: get_sp(0.3);
+                    padding: get_sp(4) get_sp(7) get_sp(6) get_sp(4);
+                }
+
+                span {
+                    font-size: 47px;
+                    letter-spacing: 1.08px;
+
+                    @include pc {
+                        font-size: get_pc(47);
+                        letter-spacing: get_pc(1.08);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(19);
+                        letter-spacing: get_sp(0.44);
+                    }
+                }
+
+                strong {
+                    font-size: 30px;
+                    letter-spacing: 0.69px;
+
+                    @include pc {
+                        font-size: get_pc(30);
+                        letter-spacing: get_pc(0.69);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(12);
+                        letter-spacing: get_sp(0.28);
+                    }
+                }
+
+                .up {
+                    font-size: 39px;
+                    letter-spacing: 0.9px;
+
+                    @include pc {
+                        font-size: get_pc(39);
+                        letter-spacing: get_pc(0.9);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(16);
+                        letter-spacing: get_sp(0.37);
+                    }
+                }
+            }
+
+            .thumb {
+                width: 270px;
+                position: absolute;
+                top: 44px;
+                right: 12px;
+
+                @include pc {
+                    width: get_pc(270);
+                    top: get_pc(44);
+                    right: get_pc(12);
+                }
+
+                @include sp {
+                    width: get_sp(71);
+                    height: get_sp(99);
+                    top: get_sp(34);
+                    right: 0;
+                }
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+
+            .phone {
+                background: #FFD5CB 0% 0% no-repeat padding-box;
+                border: 3px solid #FF4114;
+                border-radius: 37px;
+                margin-right: 47px;
+                height: 75px;
+
+                @include pc {
+                    border: get_pc(3) solid #FF4114;
+                    border-radius: get_pc(37);
+                    margin-right: get_pc(47);
+                    height: get_pc(75);
+                }
+
+                @include sp {
+                    border: get_sp(1) solid #FF4114;
+                    border-radius: get_sp(16);
+                    margin-right: get_sp(10);
+                    height: get_sp(31);
+                }
+
+                &:hover {
+                    border: 3px solid #fff;
+                    transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+
+                    @include pc {
+                        border: get_pc(3) solid #fff;
+                    }
+
+                    @include sp {
+                        border: get_sp(1) solid #fff;
+                    }
+                }
+
+                a {
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: #FF4114;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 3px solid #FF4114;
+                    border-radius: 37px;
+                    padding: 9px 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: -6px 0 0 0;
+                    width: 304px;
+                    height: 69px;
+                    letter-spacing: -0.5px;
+
+                    @include pc {
+                        font-size: get_pc(26);
+                        border: get_pc(3) solid #FF4114;
+                        border-radius: get_pc(37);
+                        padding: get_pc(9) get_pc(12);
+                        width: get_pc(304);
+                        margin: get_pc(-6) 0 0 0;
+                        height: get_pc(69);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(10);
+                        border: get_sp(1) solid #FF4114;
+                        border-radius: get_sp(16);
+                        padding: get_sp(5) get_sp(5.5);
+                        width: get_sp(135);
+                        margin: get_sp(-3) 0 0 0;
+                        height: get_sp(28);
+                    }
+
+                    &:hover {
+                        transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+                        margin: 0;
+                    }
+
+                    &::before {
+                        content: "";
+                        @include bgsetup("../images/phone.png", center, 100% auto, no-repeat);
+                        width: 48px;
+                        height: 48px;
+                        display: inline-block;
+                        margin-right: 9px;
+
+                        @include pc {
+                            width: get_pc(48);
+                            height: get_pc(48);
+                            margin-right: get_pc(9);
+                        }
+
+                        @include sp {
+                            width: get_sp(19);
+                            height: get_sp(19);
+                            margin-right: get_sp(3);
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        @include bgsetup("../images/arrow1.png", center, 100% auto, no-repeat);
+                        width: 9px;
+                        height: 18px;
+                        display: inline-block;
+                        margin-left: 40px;
+
+                        @include pc {
+                            width: get_pc(9);
+                            height: get_pc(18);
+                            margin-left: get_pc(40);
+                        }
+
+                        @include sp {
+                            width: get_sp(4);
+                            height: get_sp(7);
+                            margin-left: get_sp(13);
+                        }
+                    }
+                }
+            }
+
+            .mail {
+                background: #FFD5CB 0% 0% no-repeat padding-box;
+                border: 3px solid #FF4114;
+                border-radius: 37px;
+                height: 75px;
+
+                @include pc {
+                    border: get_pc(3) solid #FF4114;
+                    border-radius: get_pc(37);
+                    height: get_pc(75);
+                }
+
+                @include sp {
+                    border: get_sp(1) solid #FF4114;
+                    border-radius: get_sp(16);
+                    margin-right: get_sp(22);
+                    height: get_sp(31);
+                }
+
+                &:hover {
+                    border: 3px solid #fff;
+                    transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+
+                    @include pc {
+                        border: get_pc(3) solid #fff;
+                    }
+
+                    @include sp {
+                        border: get_sp(1) solid #fff;
+                    }
+                }
+
+                a {
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 21px;
+                    color: #FFFFFF;
+                    background: #FF4114 0% 0% no-repeat padding-box;
+                    border: 3px solid #FF4114;
+                    border-radius: 37px;
+                    padding: 9px 12px;
+                    display: flex;
+                    align-items: center;
+                    margin: -6px 0 0 0;
+                    height: 69px;
+
+                    @include pc {
+                        font-size: get_pc(21);
+                        border: get_pc(3) solid #FF4114;
+                        border-radius: get_pc(37);
+                        margin: get_pc(-6) 0 0 0;
+                        height: get_pc(69);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(9);
+                        border: get_sp(1) solid #FF4114;
+                        border-radius: get_sp(16);
+                        padding: get_sp(5) get_sp(6);
+                        margin: get_sp(-3) 0 0 0;
+                        height: get_sp(28);
+                    }
+
+                    &:hover {
+                        transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+                        margin: 0;
+                    }
+
+                    &::before {
+                        content: "";
+                        @include bgsetup("../images/email.png", center, 100% auto, no-repeat);
+                        width: 48px;
+                        height: 48px;
+                        display: inline-block;
+                        margin-right: 11px;
+
+                        @include pc {
+                            width: get_pc(48);
+                            height: get_pc(48);
+                            margin-right: get_pc(11);
+                        }
+
+                        @include sp {
+                            width: get_sp(19);
+                            height: get_sp(19);
+                            margin-right: get_sp(5);
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        @include bgsetup("../images/arrow2.png", center, 100% auto, no-repeat);
+                        width: 9px;
+                        height: 18px;
+                        display: inline-block;
+                        margin-left: 30px;
+
+                        @include pc {
+                            width: get_pc(9);
+                            height: get_pc(18);
+                            margin-left: get_pc(30);
+                        }
+
+                        @include sp {
+                            width: get_sp(4);
+                            height: get_sp(8);
+                            margin-left: get_sp(8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#evaluate {
+    .inner {
+        .thumb_list {
+            padding: 99px 0 0;
+            @include bgsetup("../images/background.png", center, 100% auto, no-repeat);
+            margin-bottom: 13px;
+
+            @include pc {
+                padding: get_pc(99) 0 0;
+                margin-bottom: get_pc(13);
+            }
+
+            @include sp {
+                padding: get_sp(19) 0 0;
+                margin-bottom: get_sp(11);
+            }
+
+            .thumb {
+                max-width: 1528px;
+                margin: 0 auto;
+
+                @include pc {
+                    max-width: get_pc(1528);
+                }
+
+                @include sp {
+                    max-width: 100%;
+                }
+
+                .thumb_left {
+                    width: 741px;
+
+                    @include pc {
+                        width: get_pc(741);
+                    }
+
+                    @include sp {
+                        width: get_sp(280);
+                    }
+                }
+
+                .thumb_right {
+                    width: 810px;
+                    margin-left: auto;
+                    position: relative;
+                    top: -84px;
+
+                    @include pc {
+                        width: get_pc(810);
+                        top: get_pc(-84);
+                    }
+
+                    @include sp {
+                        width: get_sp(311);
+                        top: get_sp(-18);
+                    }
+                }
+            }
+        }
+
+        .list_evaluate {
+            max-width: 1528px;
+            margin: 0 auto 103px;
+
+            @include pc {
+                max-width: get_pc(1528);
+                margin: 0 auto get_pc(103);
+            }
+
+            @include sp {
+                max-width: 100%;
+                margin: 0 auto get_sp(42);
+                padding: 0 get_sp(10);
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    max-width: 444px;
+                    margin-bottom: 40px;
+
+                    @include pc {
+                        max-width: get_pc(444);
+                        margin-bottom: get_pc(40);
+                    }
+
+                    @include sp {
+                        max-width: 100%;
+                        width: 50%;
+                        padding: get_sp(5);
+                        margin-bottom: 0;
+                        border-right: 2px dashed rgba(45, 75, 115, 0.4);
+                        border-bottom: 2px dashed rgba(45, 75, 115, 0.4);
+                    }
+
+                    h4 {
+                        font-size: 34px;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        color: #2D4B73;
+                        display: flex;
+                        align-items: center;
+
+                        @include pc {
+                            font-size: get_pc(34);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                        }
+
+                        strong {
+                            @include bgsetup("../images/number.png", center, 100% auto, no-repeat);
+                            width: 82px;
+                            height: 85px;
+                            display: inline-block;
+                            margin-right: 14px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include pc {
+                                width: get_pc(82);
+                                height: get_pc(85);
+                                margin-right: get_pc(14);
+                            }
+
+                            @include sp {
+                                width: get_sp(32);
+                                height: get_sp(34);
+                                margin-right: get_sp(7);
+                                font-size: get_sp(18);
+                            }
+                        }
+
+                        span {
+                            color: #F806A6;
+                        }
+                    }
+
+                    .thumb {
+                        width: 98px;
+                        margin: 0 auto 28px;
+
+                        @include pc {
+                            width: get_pc(98);
+                            margin: 0 auto get_pc(28);
+                        }
+
+                        @include sp {
+                            width: get_sp(39);
+                            margin: 0 auto get_sp(11);
+                        }
+                    }
+
+                    p {
+                        font-size: 29px;
+                        color: #2D4B73;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        line-height: 40px;
+                        text-align: left;
+
+                        @include pc {
+                            font-size: get_pc(29);
+                            line-height: get_pc(40);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(13);
+                            line-height: get_sp(20);
+                        }
+                    }
+                }
+
+                li:nth-child(2) {
+                    @include sp {
+                        padding: get_sp(5) get_sp(10);
+                        border-right: unset;
+                        border-bottom: 2px dashed rgba(45, 75, 115, 0.4);
+                    }
+
+                    h4 {
+                        strong {
+                            margin-right: 18px;
+
+                            @include pc {
+                                margin-right: get_pc(18);
+                            }
+
+                            @include sp {
+                                margin-right: get_sp(7);
+                            }
+                        }
+                    }
+
+                    .thumb {
+                        width: 145px;
+                        margin: 0 auto 25px;
+
+                        @include pc {
+                            width: get_pc(145);
+                            margin: 0 auto get_pc(25);
+                        }
+
+                        @include sp {
+                            width: get_sp(58);
+                            margin: 0 auto get_sp(11);
+                        }
+                    }
+                }
+
+                li:nth-child(3) {
+                    @include sp {
+                        padding-top: get_sp(12);
+                        border-right: 2px dashed rgba(45, 75, 115, 0.4);
+                        border-bottom: 2px dashed rgba(45, 75, 115, 0.4);
+                    }
+
+                    h4 {
+                        strong {
+                            margin-right: 14px;
+
+                            @include pc {
+                                margin-right: get_pc(14);
+                            }
+
+                            @include sp {
+                                margin-right: get_sp(7);
+                            }
+                        }
+                    }
+
+                    .thumb {
+                        width: 218px;
+                        margin: 0 auto 19px;
+
+                        @include pc {
+                            width: get_pc(218);
+                            margin: 0 auto get_pc(19);
+                        }
+
+                        @include sp {
+                            width: get_sp(84);
+                            margin: 0 auto get_sp(10);
+                        }
+                    }
+                }
+
+                li:nth-child(4) {
+                    @include sp {
+                        padding: get_sp(5) get_sp(10);
+                        border-right: unset;
+                        border-bottom: 2px dashed rgba(45, 75, 115, 0.4);
+                        padding-top: get_sp(12);
+                    }
+
+                    h4 {
+                        strong {
+                            margin-right: 18px;
+
+                            @include pc {
+                                margin-right: get_pc(18);
+                            }
+
+                            @include sp {
+                                margin-right: get_sp(7);
+                            }
+                        }
+                    }
+
+                    .thumb {
+                        width: 120px;
+                        margin: 0 auto 9px;
+
+                        @include pc {
+                            width: get_pc(120);
+                            margin: 0 auto get_pc(9);
+                        }
+
+                        @include sp {
+                            width: get_sp(47);
+                            margin: 0 auto get_sp(4);
+                        }
+                    }
+                }
+
+                li:nth-child(5) {
+                    @include sp {
+                        padding-top: get_sp(12);
+                        border-right: 2px dashed rgba(45, 75, 115, 0.4);
+                        border-bottom: unset;
+                    }
+
+                    h4 {
+                        strong {
+                            margin-right: 14px;
+
+                            @include pc {
+                                margin-right: get_pc(14);
+                            }
+
+                            @include sp {
+                                margin-right: get_sp(6);
+                            }
+                        }
+                    }
+
+                    .thumb {
+                        width: 106px;
+                        margin: 0 auto 14px;
+
+                        @include pc {
+                            width: get_pc(106);
+                            margin: 0 auto get_pc(14);
+                        }
+
+                        @include sp {
+                            width: get_sp(42);
+                            margin: 0 auto get_sp(6);
+                        }
+                    }
+                }
+
+                li:nth-child(6) {
+                    @include sp {
+                        padding: get_sp(5) get_sp(10);
+                        padding-top: get_sp(12);
+                        border-right: unset;
+                        border-bottom: unset;
+                    }
+
+                    h4 {
+                        strong {
+                            margin-right: 18px;
+
+                            @include pc {
+                                margin-right: get_pc(18);
+                            }
+
+                            @include sp {
+                                margin-right: get_sp(7);
+                            }
+                        }
+                    }
+
+                    .thumb {
+                        width: 105px;
+                        margin: 0 auto 19px;
+
+                        @include pc {
+                            width: get_pc(105);
+                            margin: 0 auto get_pc(19);
+                        }
+
+                        @include sp {
+                            width: get_sp(42);
+                            margin: 0 auto get_sp(8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .bg_inner {
+            @include bgsetup("../images/background1.png", center, 100% auto, no-repeat);
+
+            .tlt_section {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto 59px;
+                position: relative;
+                width: fit-content;
+
+                @include pc {
+                    margin: 0 auto get_pc(59);
+                }
+
+                @include sp {
+                    margin: 0 auto get_sp(18);
+                }
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 65px;
+                    height: 8px;
+                    background-color: #2D4B73;
+                    position: absolute;
+                    top: 45px;
+                    left: -100px;
+                    border-radius: 8px;
+
+                    @include pc {
+                        width: get_pc(65);
+                        height: get_pc(8);
+                        top: get_pc(45);
+                        left: get_pc(-100);
+                        border-radius: get_pc(8);
+                    }
+
+                    @include sp {
+                        width: get_sp(20);
+                        height: get_sp(2);
+                        top: get_sp(13);
+                        left: get_sp(-27);
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 65px;
+                    height: 8px;
+                    background-color: #2D4B73;
+                    position: absolute;
+                    top: 45px;
+                    right: -100px;
+                    border-radius: 8px;
+
+                    @include pc {
+                        width: get_pc(65);
+                        height: get_pc(8);
+                        top: get_pc(45);
+                        right: get_pc(-100);
+                        border-radius: get_pc(8);
+                    }
+
+                    @include sp {
+                        width: get_sp(20);
+                        height: get_sp(2);
+                        top: get_sp(13);
+                        right: get_sp(-27);
+                    }
+                }
+
+                h2 {
+                    font-size: 93px;
+                    font-family: $font-zedou;
+                    font-weight: bold;
+                    color: #2D4B73;
+
+                    @include pc {
+                        font-size: get_pc(93);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(29);
+                    }
+
+                    span {
+                        font-size: 29px;
+                        font-family: $base-maru-gothic;
+                        font-weight: bold;
+                        color: #2D4B73;
+                        display: flex;
+                        justify-content: center;
+
+                        @include pc {
+                            font-size: get_pc(29);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(10);
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 69px;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    color: #2D4B73;
+                    margin-top: 12px;
+
+                    @include pc {
+                        font-size: get_pc(69);
+                        margin-top: get_pc(12);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(22);
+                        margin-top: get_sp(4);
+                    }
+
+                }
+            }
+
+            .thumb {
+                max-width: 1528px;
+                margin: 0 auto;
+
+                @include pc {
+                    max-width: get_pc(1528);
+                }
+
+                @include sp {
+                    max-width: 100%;
+                }
+
+                .thumb_left {
+                    width: 937px;
+
+                    @include pc {
+                        width: get_pc(937);
+                    }
+
+                    @include sp {
+                        width: get_sp(331);
+                    }
+                }
+
+                .thumb_right {
+                    width: 961px;
+                    margin-left: auto;
+                    position: relative;
+                    top: -100px;
+
+                    @include pc {
+                        width: get_pc(961);
+                        top: get_pc(-100);
+                    }
+
+                    @include sp {
+                        width: get_sp(329);
+                        top: get_sp(-12);
+                    }
+                }
+            }
+        }
+
+        .point {
+            margin-top: -100px;
+
+            @include pc {
+                margin-top: get_pc(-100);
+            }
+
+            @include sp {
+                margin-top: get_sp(-12);
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1528px;
+                margin: 0 auto 48px;
+
+                @include pc {
+                    max-width: get_pc(1528);
+                    margin: 0 auto get_pc(48);
+                }
+
+                @include sp {
+                    min-width: 100%;
+                    padding: 0 get_sp(20);
+                    margin: 0 auto get_sp(6);
+                }
+
+                li {
+                    .thumb {
+                        width: 417px;
+                        height: 420px;
+
+                        @include pc {
+                            width: get_pc(417);
+                            height: get_pc(420);
+                        }
+
+                        @include sp {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-size: 36px;
+                font-family: $base-font-family;
+                font-weight: bold;
+                color: #2D4B73;
+                line-height: 50px;
+                text-align: left;
+                max-width: 1032px;
+                margin: 0 auto 115px;
+
+                @include pc {
+                    font-size: get_pc(36);
+                    line-height: get_pc(50);
+                    max-width: get_pc(1032);
+                    margin: 0 auto get_pc(115);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(20);
+                    max-width: 100%;
+                    padding: 0 get_sp(18);
+                    margin: 0 auto get_sp(36);
+                }
+            }
+        }
+    }
+}
+
+#rate {
+    .inner {
+        max-width: 1528px;
+        margin: 0 auto 94px;
+        padding-top: 66px;
+
+        @include pc {
+            max-width: get_pc(1528);
+            margin: 0 auto get_pc(94);
+            padding-top: get_pc(66);
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin: 0 auto get_sp(17);
+            padding-top: get_sp(22);
+        }
+
+        h2 {
+            font-size: 113px;
+            line-height: 113px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 42px;
+            font-weight: 900;
+
+            @include pc {
+                font-size: get_pc(113);
+                line-height: get_pc(113);
+                margin-bottom: get_pc(42);
+            }
+
+            @include sp {
+                font-size: get_sp(33);
+                line-height: get_sp(33);
+                margin-bottom: get_sp(15);
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 44px;
+                display: block;
+                line-height: 44px;
+
+                @include pc {
+                    font-size: get_pc(44);
+                    line-height: get_pc(44);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            @include sp {
+                width: get_sp(370);
+                margin: 0 auto;
+            }
+
+            tbody {
+                tr:first-child {
+                    display: flex;
+
+                    td {
+                        border-radius: 5px;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        padding: 28px 0 29px;
+                        width: 507px;
+                        font-size: 38px;
+                        margin-right: 3px;
+
+                        @include pc {
+                            border-radius: get_pc(5);
+                            padding: get_pc(28) 0 get_pc(29);
+                            width: get_pc(507);
+                            font-size: get_pc(38);
+                            margin-right: get_pc(3);
+                        }
+
+                        @include sp {
+                            width: get_sp(130);
+                            border-radius: get_sp(3);
+                            padding: get_sp(12) 0 get_sp(10);
+                            font-size: get_sp(13);
+                            margin-right: 0;
+                        }
+
+                        &:nth-child(1) {
+                            background: #375FE5 0% 0% no-repeat padding-box;
+                            color: #FFFFFF;
+
+                            @include sp {
+                                width: get_sp(110);
+                                border-radius: get_sp(3) 0 0 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            background: #01B2CC 0% 0% no-repeat padding-box;
+                            color: #FFFFFF;
+                            border-radius: unset;
+                        }
+
+                        &:nth-child(3) {
+                            background: #2D4B73 0% 0% no-repeat padding-box;
+                            color: #FFFFFF;
+
+                            @include sp {
+                                border-radius: 0 get_sp(3) 0 0;
+                            }
+                        }
+                    }
+                }
+
+                tr {
+                    display: flex;
+                    &.txt_note {
+                        td {
+                            &:nth-child(2) {
+                                margin-left: -20px;
+                                @include pc {
+                                    margin-left: get_pc(-20);
+                                }
+                                @include sp {
+                                    margin-left: get_sp(-6);
+                                }
+                            }
+                        }
+                    }
+                    td {
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        padding: 14px 0 18px;
+                        width: 33.333%;
+                        font-size: 38px;
+
+                        @include pc {
+                            padding: get_pc(14) 0 get_pc(18);
+                            font-size: get_pc(38);
+                        }
+
+                        @include sp {
+                            padding: get_sp(5) 0;
+                            font-size: get_sp(14);
+                        }
+
+                        &:nth-child(1) {
+                            color: #375FE5;
+                        }
+
+                        &:nth-child(2) {
+                            color: #01B2CC;
+                        }
+
+                        &:nth-child(3) {
+                            color: #2D4B73;
+                        }
+                    }
+
+                    &:nth-child(3),
+                    &:nth-child(5),
+                    &:nth-child(7),
+                    &:nth-child(9) {
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#voices {
+    .inner {
+        max-width: 1528px;
+        margin: 0 auto 129px;
+
+        @include pc {
+            max-width: get_pc(1528);
+            margin: 0 auto get_pc(129);
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin: 0 auto get_sp(20);
+            padding: 0 get_sp(10);
+            background-color: #FAFAFA;
+        }
+
+        h2 {
+            font-size: 113px;
+            line-height: 113px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 42px;
+            font-weight: 900;
+
+            @include pc {
+                font-size: get_pc(113);
+                line-height: get_pc(113);
+                margin-bottom: get_pc(42);
+            }
+
+            @include sp {
+                font-size: get_sp(33);
+                line-height: get_sp(33);
+                margin-bottom: get_sp(15);
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 44px;
+                display: block;
+                line-height: 44px;
+
+                @include pc {
+                    font-size: get_pc(44);
+                    line-height: get_pc(44);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include sp {
+                overflow-x: scroll;
+                flex-wrap: unset;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 2;
+                overflow-y: scroll;
+            }
+
+            li {
+                width: 363px;
+                height: 470px;
+                text-align: left;
+                padding: 30px 20px 27px;
+                box-shadow: 0 3px 6px #00000029;
+                border-radius: 5px;
+                margin-bottom: 38px;
+                position: relative;
+
+                @include pc {
+                    width: get_pc(363);
+                    height: get_pc(470);
+                    padding: get_pc(30) get_pc(20) get_pc(27);
+                    border-radius: get_pc(5);
+                    margin-bottom: get_pc(38);
+                }
+
+                @include sp {
+                    width: get_sp(240);
+                    min-width: get_sp(240);
+                    height: get_sp(241);
+                    padding: get_sp(15) get_sp(7) get_sp(13) get_sp(12);
+                    border-radius: get_sp(3);
+                    margin-bottom: get_sp(13);
+                    background-color: #FFFFFF;
+                    margin-right: get_sp(12);
+                    box-shadow: 0 1px 4px #00000029;
+                }
+
+                h3 {
+                    color: #2D4B73;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 26px;
+                    display: block;
+                    line-height: 26px;
+                    margin-bottom: 6px;
+
+                    @include pc {
+                        font-size: get_pc(26);
+                        line-height: get_pc(26);
+                        margin-bottom: get_pc(6);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(15);
+                        line-height: get_sp(15);
+                        margin-bottom: get_sp(3);
+                    }
+                }
+
+                .rate {
+                    width: 157px;
+                    margin-bottom: 24px;
+
+                    @include pc {
+                        width: get_pc(157);
+                        margin-bottom: get_pc(24);
+                    }
+
+                    @include sp {
+                        width: get_sp(80);
+                        margin-bottom: get_sp(10);
+                    }
+                }
+
+                h4 {
+                    color: #2D4B73;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 24px;
+                    display: block;
+                    line-height: 24px;
+                    margin-bottom: 24px;
+
+                    @include pc {
+                        font-size: get_pc(24);
+                        line-height: get_pc(24);
+                        margin-bottom: get_pc(24);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(14);
+                        line-height: get_sp(14);
+                        margin-bottom: get_sp(10);
+                    }
+
+                    span {
+                        margin-left: 18px;
+
+                        @include pc {
+                            margin-left: get_pc(18);
+                        }
+
+                        @include sp {
+                            margin-left: get_sp(10);
+                        }
+                    }
+                }
+
+                p {
+                    color: #2D4B73;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 21px;
+                    display: block;
+                    line-height: 31px;
+                    margin-bottom: 15px;
+
+                    @include pc {
+                        font-size: get_pc(21);
+                        line-height: get_pc(31);
+                        margin-bottom: get_pc(15);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(12);
+                        line-height: get_sp(18);
+                        margin-bottom: get_sp(10);
+                    }
+                }
+
+                .people {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 26px;
+
+                    @include pc {
+                        bottom: get_pc(10);
+                        left: get_pc(26);
+                    }
+
+                    @include sp {
+                        bottom: get_sp(13);
+                        left: get_sp(12);
+                    }
+
+                    .thumb {
+                        width: 87px;
+                        height: 87px;
+
+                        @include pc {
+                            width: get_pc(87);
+                            height: get_pc(87);
+                        }
+
+                        @include sp {
+                            width: get_sp(47);
+                            height: get_sp(48);
+                        }
+                    }
+
+                    span {
+                        color: #2D4B73;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 22px;
+                        display: block;
+                        line-height: 22px;
+                        margin-left: 12px;
+
+                        @include pc {
+                            font-size: get_pc(22);
+                            line-height: get_pc(22);
+                            margin-left: get_pc(12);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(12);
+                            line-height: get_sp(12);
+                            margin-left: get_sp(8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#flow {
+    .inner {
+        max-width: 1528px;
+        margin: 0 auto 86px;
+        padding-top: 121px;
+
+        @include pc {
+            max-width: get_pc(1528);
+            margin: 0 auto get_pc(86);
+            padding-top: get_pc(121);
+        }
+
+        @include sp {
+            max-width: 100%;
+            padding-top: get_sp(24);
+            margin: 0 auto get_sp(20);
+        }
+
+        h2 {
+            font-size: 113px;
+            line-height: 113px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 42px;
+            font-weight: 900;
+
+            @include pc {
+                font-size: get_pc(113);
+                line-height: get_pc(113);
+                margin-bottom: get_pc(42);
+            }
+
+            @include sp {
+                font-size: get_sp(33);
+                line-height: get_sp(33);
+                margin-bottom: get_sp(16);
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 44px;
+                display: block;
+                line-height: 44px;
+
+                @include pc {
+                    font-size: get_pc(44);
+                    line-height: get_pc(44);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            @include sp {
+                flex-wrap: unset;
+                overflow: auto;
+                padding: get_sp(2) get_sp(10);
+            }
+
+            li {
+                width: 328px;
+                height: 515px;
+                text-align: left;
+                border-radius: 3px;
+                position: relative;
+                box-shadow: 0px 3px 6px #00000029;
+
+                @include pc {
+                    width: get_pc(328);
+                    height: get_pc(515);
+                    border-radius: get_pc(3);
+                }
+
+                @include sp {
+                    min-width: get_sp(134);
+                    width: get_sp(134);
+                    height: get_sp(289);
+                    border-radius: get_sp(1);
+                    box-shadow: 0 2px 4px #00000029;
+                    margin-right: get_sp(20);
+                }
+
+                &:last-child {
+                    @include sp {
+                        margin-right: 0;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    @include bgsetup("../images/arrow.svg", center, 100% auto, no-repeat);
+                    width: 21px;
+                    height: 32px;
+                    display: inline-block;
+                    position: absolute;
+                    right: -50px;
+                    top: 42%;
+
+                    @include pc {
+                        width: get_pc(21);
+                        height: get_pc(32);
+                        right: get_pc(-50);
+                    }
+
+                    @include sp {
+                        width: get_sp(8);
+                        height: get_sp(13);
+                        right: get_sp(-15);
+                        top: 48%;
+                    }
+                }
+
+                span {
+                    color: #FFFFFF;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 27px;
+                    display: block;
+                    padding: 13px 31px 12px 25px;
+                    background: #2D4B73 0% 0% no-repeat padding-box;
+                    border-radius: 3px;
+                    width: 134px;
+                    margin-bottom: 21px;
+                    display: flex;
+
+                    @include pc {
+                        font-size: get_pc(27);
+                        padding: get_pc(13) get_pc(31) get_pc(12) get_pc(25);
+                        border-radius: get_pc(3);
+                        width: get_pc(134);
+                        margin-bottom: get_pc(21);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(17);
+                        padding: get_sp(5) get_sp(10) get_sp(5) get_sp(12);
+                        border-radius: get_sp(1);
+                        width: get_sp(72);
+                        margin-bottom: get_sp(10);
+                    }
+
+                    strong {
+                        color: #FFFFFF;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 31px;
+
+                        @include pc {
+                            font-size: get_pc(31);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(20);
+                        }
+                    }
+                }
+
+                h4 {
+                    padding-left: 16px;
+                    color: #2D4B73;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-bottom: 18px;
+
+                    @include pc {
+                        padding-left: get_pc(16);
+                        font-size: get_pc(30);
+                        margin-bottom: get_pc(18);
+                    }
+
+                    @include sp {
+                        padding-left: get_sp(12);
+                        font-size: get_sp(15);
+                        margin-bottom: get_sp(12);
+                    }
+                }
+
+                .thumb {
+                    margin-bottom: 24px;
+
+                    @include pc {
+                        margin-bottom: get_pc(24);
+                    }
+
+                    @include sp {
+                        margin-bottom: get_sp(13);
+                    }
+                }
+
+                p {
+                    padding: 0 5px;
+                    color: #2D4B73;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 31px;
+                    margin-bottom: 25px;
+
+                    @include pc {
+                        padding: 0 get_pc(5);
+                        font-size: get_pc(21);
+                        line-height: get_pc(31);
+                        margin-bottom: get_pc(25);
+                    }
+
+                    @include sp {
+                        padding: 0 get_sp(5);
+                        font-size: get_sp(12);
+                        line-height: get_sp(18);
+                        margin-bottom: get_sp(18);
+                    }
+                }
+            }
+
+            li:last-child {
+                &::after {
+                    content: unset;
+                }
+            }
+        }
+    }
+}
+
+#QA {
+    .inner {
+        max-width: 1528px;
+        margin: 0 auto 75px;
+
+        @include pc {
+            max-width: 100%;
+            margin: 0 auto get_pc(75);
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin: 0 auto get_sp(20);
+        }
+
+        h2 {
+            font-size: 113px;
+            line-height: 113px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 67px;
+            font-weight: 900;
+
+            @include pc {
+                font-size: get_pc(113);
+                line-height: get_pc(113);
+                margin-bottom: get_pc(67);
+            }
+
+            @include sp {
+                font-size: get_sp(33);
+                line-height: get_sp(33);
+                margin-bottom: get_sp(10);
+            }
+
+            strong {
+                font-size: 83px;
+
+                @include pc {
+                    font-size: get_pc(83);
+                }
+
+                @include sp {
+                    font-size: get_sp(22);
+                }
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 44px;
+                display: block;
+                line-height: 44px;
+
+                @include pc {
+                    font-size: get_pc(44);
+                    line-height: get_pc(44);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                }
+            }
+        }
+
+        .list_faq {
+            max-width: 1528px;
+            margin: 0 auto;
+
+            @include pc {
+                max-width: get_pc(1528);
+            }
+
+            @include sp {
+                max-width: 100%;
+                padding: 0 get_sp(10);
+            }
+
+            .item_faq {
+                text-align: left;
+                margin-bottom: 15px;
+
+                @include pc {
+                    margin-bottom: get_pc(15);
+                }
+
+                @include sp {
+                    margin-bottom: get_sp(7);
+                }
+
+                .item_q {
+                    padding: 33px 55px 32px 40px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 4px solid #2D4B73;
+                    border-radius: 5px;
+                    position: relative;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    @include pc {
+                        padding: get_pc(33) get_pc(55) get_pc(32) get_pc(40);
+                        border: get_pc(4) solid #2D4B73;
+                        border-radius: get_pc(5);
+                    }
+
+                    @include sp {
+                        padding: get_sp(15) get_sp(42) get_sp(15) get_sp(15);
+                        border: get_sp(2) solid #2D4B73;
+                        border-radius: get_sp(3);
+                    }
+
+                    &.active {
+                        border-radius: 5px 5px 0 0;
+
+                        @include pc {
+                            border-radius: get_pc(5) get_pc(5) 0 0;
+                        }
+
+                        @include sp {
+                            border-radius: get_sp(3) get_sp(3) 0 0;
+                        }
+
+                        h3 {
+                            &:after {
+                                transform: translate(0, -50%) rotate(0deg);
+                                transition: all 0.5s ease;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        color: #2D4B73;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 32px;
+
+                        @include pc {
+                            font-size: get_pc(32);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                        }
+
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 25px;
+                            height: 5px;
+                            background-color: #2D4B73;
+                            right: 55px;
+                            top: 50%;
+                            transition: all 0.5s ease;
+                            transform: translate(0, -50%);
+
+                            @include pc {
+                                width: get_pc(25);
+                                height: get_pc(5);
+                                right: get_pc(55);
+                            }
+
+                            @include sp {
+                                width: get_sp(12);
+                                height: get_sp(2);
+                                right: get_sp(15);
+                            }
+                        }
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            width: 25px;
+                            height: 5px;
+                            background-color: #2D4B73;
+                            right: 55px;
+                            top: 50%;
+                            transform: translate(0, -50%) rotate(90deg);
+                            transition: all 0.5s ease;
+
+                            @include pc {
+                                width: get_pc(25);
+                                height: get_pc(5);
+                                right: get_pc(55);
+                            }
+
+                            @include sp {
+                                width: get_sp(12);
+                                height: get_sp(2);
+                                right: get_sp(15);
+                            }
+                        }
+                    }
+
+                    span {
+                        margin-right: 15px;
+                        color: #2D4B73;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 32px;
+
+                        @include pc {
+                            font-size: get_pc(32);
+                            margin-right: get_pc(15);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                            margin-right: get_sp(5);
+                        }
+                    }
+                }
+
+                .item_a {
+                    display: none;
+                    padding: 41px 93px 50px 40px;
+                    background: #2D4B73 0% 0% no-repeat padding-box;
+                    border-radius: 0 0 5px 5px;
+                    margin-top: -1px;
+
+                    @include pc {
+                        padding: get_pc(41) get_pc(93) get_pc(50) get_pc(40);
+                        border-radius: 0 0 get_pc(5) get_pc(5);
+                        margin-top: get_pc(-1);
+                    }
+
+                    @include sp {
+                        padding: get_sp(11) get_sp(28) get_sp(14) get_sp(15);
+                        border-radius: 0 0 get_sp(3) get_sp(3);
+                        margin-top: get_sp(-1);
+                    }
+
+                    &.active {
+                        display: flex;
+                    }
+
+                    .txt_desp {
+                        display: flex;
+                    }
+
+                    p {
+                        color: #FFFFFF;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 51px;
+                        background: #2D4B73 0% 0% no-repeat padding-box;
+
+                        @include pc {
+                            font-size: get_pc(32);
+                            line-height: get_pc(51);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(21);
+                        }
+
+                    }
+
+                    span {
+                        margin-right: 15px;
+                        color: #FFFFFF;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 32px;
+
+                        @include pc {
+                            font-size: get_pc(32);
+                            line-height: get_pc(51);
+                            margin-right: get_pc(15);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(21);
+                            margin-right: get_sp(6);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#company {
+    .inner {
+        max-width: 1528px;
+        margin: 0 auto 31px;
+
+        @include pc {
+            max-width: get_pc(1528);
+            margin: 0 auto get_pc(31);
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin: 0 auto get_sp(10);
+            padding-top: get_sp(16.5);
+            padding-bottom: get_sp(12);
+            background-color: #FAFAFA;
+        }
+
+        h2 {
+            font-size: 113px;
+            line-height: 113px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 63px;
+            font-weight: 900;
+
+            @include pc {
+                font-size: get_pc(113);
+                line-height: get_pc(113);
+                margin-bottom: get_pc(63);
+            }
+
+            @include sp {
+                font-size: get_sp(33);
+                line-height: get_sp(33);
+                margin-bottom: get_sp(20);
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 44px;
+                display: block;
+                line-height: 44px;
+                margin-top: 15px;
+
+                @include pc {
+                    font-size: get_pc(44);
+                    line-height: get_pc(44);
+                    margin-top: get_pc(15);
+                }
+
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(13);
+                    margin-top: get_sp(4);
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            tbody {
+                tr {
+                    display: flex;
+                    padding-bottom: 13px;
+                    border-bottom: 3px solid #2D4B73;
+                    margin-bottom: 44px;
+
+                    @include pc {
+                        padding-bottom: get_pc(13);
+                        border-bottom: get_pc(3) solid #2D4B73;
+                        margin-bottom: get_pc(44);
+                    }
+
+                    @include sp {
+                        padding-bottom: get_sp(5);
+                        border-bottom: get_sp(1) solid #2D4B73;
+                        margin-bottom: get_sp(16);
+                    }
+
+                    td {
+                        color: #2D4B73;
+                        font-family: $base-font-family;
+                        font-weight: bold;
+                        font-size: 35px;
+                        display: block;
+                        margin-right: 55px;
+
+                        @include pc {
+                            font-size: get_pc(35);
+                            margin-right: get_pc(55);
+                        }
+
+                        @include sp {
+                            font-size: get_sp(13);
+                            margin-right: get_sp(13);
+                        }
+
+                        &:first-child {
+                            width: 36%;
+                            text-align: right;
+
+                            @include sp {
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#last_main {
+    .inner {
+        border-top: 5px solid #2D4B73;
+        padding-bottom: 266px;
+
+        @include pc {
+            border-top: get_pc(5) solid #2D4B73;
+            padding-bottom: get_pc(266);
+        }
+
+        @include sp {
+            border-top: unset;
+            padding-bottom: get_sp(82);
+        }
+
+        h1 {
+            text-align: left;
+            padding: 10px 196px 0;
+            font-size: 56px;
+            font-family: $font-zedou;
+            color: #2D4B73;
+            margin-bottom: 10px;
+            font-weight: 900;
+            width: fit-content;
+
+            @include pc {
+                padding: get_pc(10) get_pc(196) 0;
+                font-size: get_pc(56);
+                margin-bottom: get_pc(10);
+            }
+
+            @include sp {
+                padding: get_sp(10) get_sp(10) 0;
+                font-size: get_sp(24);
+                margin-bottom: get_sp(4);
+            }
+
+            span {
+                color: #2D4B73;
+                font-family: $base-font-family;
+                font-weight: bold;
+                font-size: 21px;
+                display: block;
+                line-height: 30px;
+                text-align: center;
+
+                @include pc {
+                    font-size: get_pc(21);
+                    line-height: get_pc(30);
+                }
+
+                @include sp {
+                    font-size: get_sp(9);
+                    line-height: get_sp(13);
+                }
+            }
+        }
+
+        .list {
+            padding: 47px 0 3px;
+            background: #2D4B73 0% 0% no-repeat padding-box;
+
+            @include pc {
+                padding: get_pc(47) 0 get_pc(3);
+            }
+
+            @include sp {
+                padding: get_sp(15) get_sp(10);
+            }
+
+            ul {
+                max-width: 1528px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+
+                @include pc {
+                    max-width: get_pc(1528);
+                }
+
+                @include sp {
+                    max-width: 100%;
+                }
+
+                li {
+                    color: #FFFFFF;
+                    font-family: $base-font-family;
+                    font-weight: bold;
+                    font-size: 26px;
+                    display: block;
+                    margin-bottom: 43px;
+                    text-align: center;
+                    margin-right: 59px;
+
+                    @include pc {
+                        font-size: get_pc(26);
+                        margin-bottom: get_pc(43);
+                        margin-right: get_pc(59);
+                    }
+
+                    @include sp {
+                        font-size: get_sp(11);
+                        margin-bottom: get_sp(15);
+                        margin-right: get_sp(15);
+                    }
+
+                    &:last-child {
+                        @include sp {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

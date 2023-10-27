@@ -1,0 +1,265 @@
+p:empty {
+  display: none;
+}
+
+.anime2,
+.anime {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.anime.animated {
+  animation: fadeInUp 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s forwards;
+}
+
+.anime2.animated {
+  animation: fadeInUp2 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s forwards;
+}
+
+/*
+    button
+*/
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+/*
+    Btn Link To Top
+*/
+.btn_fixed {
+  position: fixed;
+  right: 42px;
+  bottom: 30px;
+  display: flex;
+  z-index: 99;
+
+  @include sp {
+    right: 0;
+    left: 0;
+    bottom: get_sp(-10);
+    left: get_sp(-9);
+  }
+
+  .btn_line {
+    transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+
+    @include sp {
+      width: 100%;
+    }
+
+    a {
+      width: 163px;
+      display: block;
+
+      @include pc {
+        width: get_pc(163);
+      }
+
+      @include sp {
+        width: get_sp(420);
+
+        img {
+          max-width: get_sp(420);
+        }
+      }
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .btn_to_top {
+    a {
+      writing-mode: vertical-rl;
+      text-align: left;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 3.2px;
+      color: #3f7ad0;
+      font-weight: bold;
+      border-left: 2px solid #3f7ad0;
+      height: 83px;
+
+      @include pc {
+        font-size: get_pc(16);
+        line-height: get_pc(27);
+        letter-spacing: get_pc(3.2);
+        height: get_pc(83);
+      }
+
+      @include sp {
+        display: none;
+      }
+    }
+  }
+}
+
+/*
+    Box Line
+*/
+.box_content_line {
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 0 80px;
+  background-color: #ffffff;
+  width: 786px;
+  margin: 0 auto;
+  padding: 43px 100px 56px;
+  @include pc {
+    width: get_pc(786);
+    padding: get_pc(43) get_pc(100) get_pc(56);
+  }
+
+  @include sp {
+    width: get_sp(350);
+    padding: get_sp(47) get_sp(20) get_sp(51);
+  }
+
+  h4 {
+    font-size: 35px;
+    color: #212121;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include pc {
+      font-size: get_pc(35);
+      line-height: get_pc(50);
+      margin-bottom: get_pc(32);
+    }
+
+    @include sp {
+      font-size: get_sp(18);
+      line-height: get_sp(30);
+      margin-bottom: get_sp(29);
+    }
+
+    span {
+      font-size: 40px;
+      color: #0b52a0;
+      position: relative;
+      z-index: 9;
+
+      @include pc {
+        font-size: get_pc(40);
+      }
+
+      @include sp {
+        font-size: get_sp(24);
+      }
+
+      &:before {
+        content: "";
+        background-color: #cee552;
+        width: 100%;
+        height: 14px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .apply_now {
+    > span {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+      text-align: center;
+      color: #212121;
+      display: block;
+      margin-bottom: 12px;
+
+      @include pc {
+        font-size: get_pc(20);
+        line-height: get_pc(30);
+        margin-bottom: get_pc(12);
+      }
+
+      @include sp {
+        font-size: get_sp(16);
+        line-height: get_sp(24);
+        margin-bottom: get_sp(12);
+      }
+    }
+
+    .btn_link {
+      a {
+        background-color: #0b52a0;
+        display: inline-block;
+        padding: 10px 0 9px;
+        width: 500px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: bold;
+        color: #ffffff;
+        position: relative;
+        transition: 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+        border: 1px solid #0b52a0;
+
+        @include pc {
+          padding: get_pc(10);
+          font-size: get_pc(30);
+          line-height: get_pc(45);
+        }
+
+        @include sp {
+          padding: get_sp(14);
+          font-size: get_sp(14);
+          line-height: get_sp(27);
+          width: get_sp(310);
+        }
+
+        &:hover {
+          letter-spacing: 0.15em;
+        }
+
+        &:after {
+          content: "";
+          @include bgsetup(
+            "../images/arrow_line.png",
+            center,
+            100% auto,
+            no-repeat
+          );
+          width: 50px;
+          height: 4px;
+          display: inline-block;
+          margin-left: 24px;
+          vertical-align: middle;
+
+          @include pc {
+            width: get_pc(50);
+            height: get_pc(4);
+            margin-left: get_pc(24);
+          }
+
+          @include sp {
+            width: get_sp(50);
+            height: get_sp(4);
+            margin-left: get_sp(16);
+          }
+        }
+
+        span {
+          font-size: 18px;
+
+          @include pc {
+            font-size: get_pc(18);
+          }
+
+          @include sp {
+            font-size: get_sp(16);
+          }
+        }
+      }
+    }
+  }
+}
